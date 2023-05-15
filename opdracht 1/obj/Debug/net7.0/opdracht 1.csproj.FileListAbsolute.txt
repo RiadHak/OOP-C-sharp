@@ -1,0 +1,15 @@
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\bin\Debug\net7.0\opdracht 1.exe
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\bin\Debug\net7.0\opdracht 1.deps.json
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\bin\Debug\net7.0\opdracht 1.runtimeconfig.json
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\bin\Debug\net7.0\opdracht 1.dll
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\bin\Debug\net7.0\opdracht 1.pdb
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.csproj.AssemblyReference.cache
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.AssemblyInfoInputs.cache
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.AssemblyInfo.cs
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.csproj.CoreCompileInputs.cache
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.dll
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\refint\opdracht 1.dll
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.pdb
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\opdracht 1.genruntimeconfig.cache
+C:\Users\Riad\OneDrive - Da Vinci College\A Mbo4\Git\OOP-C-sharp\opdracht 1\obj\Debug\net7.0\ref\opdracht 1.dll
