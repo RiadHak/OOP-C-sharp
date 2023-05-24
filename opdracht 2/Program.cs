@@ -10,7 +10,7 @@ public class Program {
     public static void Main(string[] args)
     {
         bool game = true;
-        while (game =true)
+        while (game)
         {
             Trainer trainer1 = createTrainer();
             Trainer trainer2 = createTrainer();
@@ -26,6 +26,7 @@ public class Program {
             /*to do the trainer throws the ball*/
             for (int i = 0; i < 6; i++)
             {
+                // trainer 1: 
                 Console.WriteLine(trainer1.TrainerName + $" is Throwing his ball number :{i + 1} ");
                 trainer1.throw_ball(i);
 

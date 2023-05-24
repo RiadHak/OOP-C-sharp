@@ -9,6 +9,7 @@ namespace opdracht_2
     public class PokeBall
     {
         private Charmander? _name;
+
         public Charmander PokemoneName { get { return _name; } set { _name = value; } }
 
 
