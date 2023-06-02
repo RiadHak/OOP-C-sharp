@@ -1,4 +1,5 @@
 ﻿using opdracht_3;
+using opdracht_4;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,16 +29,21 @@ namespace opdracht_2
             }
             return "belt full";
         }
-        public void throw_ball(int pos)
-        {
-            trainer_belt[pos].open_ball();
-
+        public Pokemon throw_ball(PokeBall pos)
+        {   
+            if(pos.ready == true) {return pos.open_ball(); }
+            else {return pos.open_ball();}
+            
+            
         }
         public void del_pok(int pos)
         {
             return;
         }
-
+        public List<PokeBall> get_belt()
+        {
+            return trainer_belt;
+        }
 
         // addPokeball(Pokeball pokeball) { }
     }

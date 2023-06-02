@@ -20,5 +20,10 @@ namespace opdracht_3
             this.type = type;
         }
         public abstract void battle_cry();
+
+        // public bool isWeakAgainst(Pokemon pokemon)
+        //{
+        //    return this.weakness == pokemon.strength;
+        //}
     }
 }

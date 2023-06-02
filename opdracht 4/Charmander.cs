@@ -12,12 +12,10 @@ namespace opdracht_2
 
         public Charmander(string name, string strength, string weakness, string type) : base(name, strength, weakness, type)
         {
-            this.type = "Charmander";
         }
         public override void battle_cry()
         {
             Console.WriteLine(this.type + " " + this.name + " is zijn Battlecry aan het doen O<>O "+this.strength);
-
 
         }
 

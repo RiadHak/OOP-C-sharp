@@ -27,33 +27,53 @@ public class Program
                 string st = Console.ReadLine();
                 if(st == "fire")
                 {
-                    Console.WriteLine(trainer1.add_poke_ball(new PokeBall(new Charmander(char_name, st, "water", " "))));
-                    Console.WriteLine(trainer2.add_poke_ball(new PokeBall(new Charmander(char_name, st, "water", " "))));
+                    Console.WriteLine(trainer1.add_poke_ball(new PokeBall(new Charmander(char_name, st, "water", " "),true)));
+                    Console.WriteLine(trainer2.add_poke_ball(new PokeBall(new Charmander(char_name, st, "water", " "), true)));
                 }
                 else if(st == "water")
                 {
-                    Console.WriteLine(trainer1.add_poke_ball(new PokeBall(new Squirtle(char_name, st, "grass", " "))));
-                    Console.WriteLine(trainer2.add_poke_ball(new PokeBall(new Squirtle(char_name, st, "grass", " "))));
+                    Console.WriteLine(trainer1.add_poke_ball(new PokeBall(new Squirtle(char_name, st, "grass", " "), true)));
+                    Console.WriteLine(trainer2.add_poke_ball(new PokeBall(new Squirtle(char_name, st, "grass", " "), true)));
                 }
                 else if (st == "grass")
                 {
-                    Console.WriteLine(trainer1.add_poke_ball(new PokeBall(new Bulbasaur(char_name, st, "fire", " "))));
-                    Console.WriteLine(trainer2.add_poke_ball(new PokeBall(new Bulbasaur(char_name, st, "fire", " "))));
+                    Console.WriteLine(trainer1.add_poke_ball(new PokeBall(new Bulbasaur(char_name, st, "fire", " "), true)));
+                    Console.WriteLine(trainer2.add_poke_ball(new PokeBall(new Bulbasaur(char_name, st, "fire", " "), true)));
                 }
 
             }
+            Random ran = new Random();
+            Random ran2 = new Random();
+
+
+
             for (int i = 0; i < 6; i++)
             {
+                var pokes = trainer1.get_belt().Where(p => p.ready == true).ToList();
+                var pokes2 = trainer2.get_belt().Where(p => p.ready == true).ToList();
                 // trainer 1: 
+                Console.WriteLine(" ");
                 Console.WriteLine(trainer1.TrainerName + $" is Throwing his ball number :{i + 1} ");
-                trainer1.throw_ball(i);
+
 
                 Console.WriteLine(trainer2.TrainerName + $" is Throwing his ball number :{i + 1} ");
-                trainer2.throw_ball(i);
+
+                var x = pokes[ran.Next(0,pokes.Count)];
+                var y = pokes2[ran.Next(0,pokes2.Count)];
+
+
+
+                //object _value = pokes.ran.Next(0, pokes.Count);
+
+                Battle sim = new Battle();
+                 sim.battle_simulator(trainer1.throw_ball(x), trainer2.throw_ball(y));
+
 
 
                 Console.WriteLine(trainer1.TrainerName + $" is retrieving his ball number :{i + 1} ");
                 Console.WriteLine(trainer2.TrainerName + $" is retrieving his ball number :{i + 1} ");
+                Console.WriteLine(" ");
+
             }
             Console.WriteLine("do you still wanna play?(Y/N)");
             string vraag = Console.ReadLine();
@@ -77,11 +97,6 @@ public class Program
 
     }
 }
-
-
-
-
-
 
 
 

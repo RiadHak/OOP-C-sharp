@@ -9,25 +9,19 @@ namespace opdracht_4
 {
     public class Pokemon_battle_simulator
     {
-        //List<string> charm = new List<string>();
-        //List<string> squirtle = new List<string>();
-        //List<string> bull = new List<string>();
-
-        //private string charm;
-        //private string squirte;
-        //private string bull;
-
-
-
 
         public int returnWinner(string p1 , string p2 , string p3)
         {
             if (p1 == p3)
             {
+                Console.WriteLine("player 1 wins");
+
                 return 1;
             }
             else
             {
+                Console.WriteLine("player 2 wins");
+
                 return 2;
             }
         }
@@ -56,6 +50,7 @@ namespace opdracht_4
             }
             else
             {
+                Console.WriteLine("draw");
                 return 3;
             }
 
