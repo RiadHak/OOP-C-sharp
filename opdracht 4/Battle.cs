@@ -13,13 +13,15 @@ namespace opdracht_4
         {
             if (p1 == p3)
             {
+                
                 Console.WriteLine("player 1 wins the round");
-
+                Arena.arena.Trainer1_score += 1;
                 return 1;
             }
             else
             {
                 Console.WriteLine("player 2 wins the round");
+                Arena.arena.Trainer2_score += 1;
 
                 return 2;
             }

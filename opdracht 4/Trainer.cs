@@ -46,5 +46,27 @@ namespace opdracht_2
         }
 
         // addPokeball(Pokeball pokeball) { }
+
+
+
+
+        public void make_pokemon(Trainer train, string ty, string char_name)
+        {
+            if (ty == "fire")
+            {
+                Console.WriteLine(train.add_poke_ball(new PokeBall(new Charmander(char_name, ty, "water", " "), true)));
+
+            }
+            else if (ty == "water")
+            {
+                Console.WriteLine(train.add_poke_ball(new PokeBall(new Squirtle(char_name, ty, "grass", " "), true)));
+
+            }
+            else if (ty == "grass")
+            {
+                Console.WriteLine(train.add_poke_ball(new PokeBall(new Bulbasaur(char_name, ty, "fire", " "), true)));
+
+            }
+        }
     }
 }
