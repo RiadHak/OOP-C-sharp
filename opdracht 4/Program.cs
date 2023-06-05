@@ -15,6 +15,9 @@ public class Program
         bool game = true;
         while (game)
         {
+            Arena.arena.Trainer1_score = 0;
+            Arena.arena.Trainer2_score = 0;
+
             Trainer trainer1 = createTrainer();
             Trainer trainer2 = createTrainer();
 
@@ -43,7 +46,6 @@ public class Program
 
                 var pokes = trainer1.get_belt().Where(p => p.ready == true).ToList();
                 var pokes2 = trainer2.get_belt().Where(p => p.ready == true).ToList();
-                // trainer 1: 
                 Console.WriteLine(" ");
                 Console.WriteLine(trainer1.TrainerName + $" is Throwing his ball number :{i + 1} ");
 
@@ -60,7 +62,7 @@ public class Program
                 Console.WriteLine(" ");
 
             }
-            
+            Arena.arena.return_winner();
             Console.WriteLine("do you still wanna play?(Y/N)");
             string vraag = Console.ReadLine();
             if (vraag == "Y")

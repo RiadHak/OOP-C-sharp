@@ -31,11 +31,7 @@ namespace opdracht_4
 
         public int battle_simulator(Pokemon fighter1, Pokemon fighter2)
         {
-            //if (fighter1.isWeakAgainst(fighter2))
-            //{
-
-            //}
-
+            
             if (fighter1.strength == "fire" && fighter2.strength == "water" || fighter1.strength == "water" && fighter2.strength == "fire")
             {
                 return returnWinner(fighter1.strength, fighter2.strength, "water");

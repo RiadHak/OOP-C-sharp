@@ -11,14 +11,14 @@ namespace opdracht_4
     {
         private Battle fight = new Battle();
         private int rounds;
-        private int Score_Trariner1;
-        private int Score_Trariner2;
+        private int Score_Trainer1;
+        private int Score_Trainer2;
 
         public Battle Fight { get { return fight; } set { fight = value; } }
         public int Rounds { get {  return rounds; } set {  rounds = value; } }
 
-        public int Trainer1_score { get { return Score_Trariner1;} set { Score_Trariner1 = value;} }
-        public int Trainer2_score { get { return Score_Trariner2;} set { Score_Trariner2 = value;} }
+        public int Trainer1_score { get { return Score_Trainer1;} set { Score_Trainer1 = value;} }
+        public int Trainer2_score { get { return Score_Trainer2;} set { Score_Trainer2 = value;} }
 
 
 
@@ -26,16 +26,12 @@ namespace opdracht_4
         
         private Arena() { }
 
-
+        // doBattle(Battle battle) 
 
         public void clash(Pokemon t1, Pokemon t2)
         {
             fight.battle_simulator(t1,t2);
         }
-
-
-
-
 
         public int getRounds()
         {
@@ -48,10 +44,22 @@ namespace opdracht_4
             Console.WriteLine("Round :"+this.Rounds +" FIGHT!");
         }
 
+        public void return_winner()
+        {
+            if(this.Trainer1_score > this.Trainer2_score)
+            {
+                Console.WriteLine("Player 1 WINS!");
+            }
+            if (this.Trainer2_score > this.Trainer1_score)
+            {
+                Console.WriteLine("Player 2 WINS!");
+            }
+            else if(this.Trainer1_score == this.Trainer2_score)
+            {
+                Console.WriteLine("Game over it's a DRAW!");
+            }
 
-
+         }
+   
     }
-
-
-
 }

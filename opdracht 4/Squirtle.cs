@@ -11,6 +11,7 @@ namespace opdracht_3
 
         public Squirtle(string name, string strength, string weakness, string type) : base(name, strength, weakness, type)
         {
+            this.type = "Squirtle";
 
         }
         public override void battle_cry()

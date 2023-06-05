@@ -12,6 +12,7 @@ namespace opdracht_2
 
         public Charmander(string name, string strength, string weakness, string type) : base(name, strength, weakness, type)
         {
+            this.type = "Charmander";
         }
         public override void battle_cry()
         {
