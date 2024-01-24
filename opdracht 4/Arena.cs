@@ -11,8 +11,10 @@ namespace opdracht_4
     {
         private Battle fight = new Battle();
         private int rounds;
-        private int Score_Trainer1;
-        private int Score_Trainer2;
+        private static int Score_Trainer1;
+        private static int Score_Trainer2;
+        public readonly string gameName = "Welcome to the pokemone game";
+
 
         public Battle Fight { get { return fight; } set { fight = value; } }
         public int Rounds { get {  return rounds; } set {  rounds = value; } }
@@ -22,11 +24,11 @@ namespace opdracht_4
 
 
 
+
+
         public static Arena arena = new Arena();
         
         private Arena() { }
-
-        // doBattle(Battle battle) 
 
         public void clash(Pokemon t1, Pokemon t2)
         {
@@ -48,11 +50,11 @@ namespace opdracht_4
         {
             if(this.Trainer1_score > this.Trainer2_score)
             {
-                Console.WriteLine("Player 1 WINS!");
+                Console.WriteLine("Player 1 WINS THE GAME!");
             }
             if (this.Trainer2_score > this.Trainer1_score)
             {
-                Console.WriteLine("Player 2 WINS!");
+                Console.WriteLine("Player 2 WINS THE GAME!");
             }
             else if(this.Trainer1_score == this.Trainer2_score)
             {

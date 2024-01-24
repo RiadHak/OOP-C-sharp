@@ -17,18 +17,18 @@ public class Program
         {
             Arena.arena.Trainer1_score = 0;
             Arena.arena.Trainer2_score = 0;
+            Console.WriteLine(Arena.arena.gameName);
 
             Trainer trainer1 = createTrainer();
             Trainer trainer2 = createTrainer();
+
 
             for (int i = 0; i < 6; i++)
             {
                 Console.WriteLine("wat is je Pokemone's naam?");
                 string char_name = Console.ReadLine(); 
-                Console.WriteLine("wat is je Pokemone kracht?");
-                string st = Console.ReadLine();
-                trainer1.make_pokemon(trainer1,st ,char_name );
-                trainer2.make_pokemon(trainer2,st ,char_name );
+                trainer1.make_pokemon(trainer1 ,char_name );
+                trainer2.make_pokemon(trainer2,char_name );
 
 
             }
@@ -46,6 +46,7 @@ public class Program
 
                 var pokes = trainer1.get_belt().Where(p => p.ready == true).ToList();
                 var pokes2 = trainer2.get_belt().Where(p => p.ready == true).ToList();
+
                 Console.WriteLine(" ");
                 Console.WriteLine(trainer1.TrainerName + $" is Throwing his ball number :{i + 1} ");
 
@@ -79,7 +80,7 @@ public class Program
 
     public static Trainer createTrainer()
     {
-        Console.WriteLine("what is the name of the first Trainer? ");
+        Console.WriteLine("what is the name of the Trainer? ");
         string a1 = Console.ReadLine();
         return new Trainer(a1);
 
